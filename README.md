@@ -12,6 +12,8 @@ The advanced terminal calculator and converter.
 ![](https://user-images.githubusercontent.com/17576065/85184071-0a401880-b297-11ea-839d-84c9433d4399.png)
 
 ## Building
+> **Important:** There's a planned conversion of Arculator to being a proper command line tool rather than a manually built C++ executable. Below are temporary procedures until this transition is successfully completed.
+
 Because of used features, Arculator **needs** to be builded with C++11. Other versions will probably not work.
 
 ```
