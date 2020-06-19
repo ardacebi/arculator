@@ -1,5 +1,6 @@
-// Copyright (c) Arda Çebi. All rights reserved.
-// Licensed under the MIT License.
+// Copyright (c) 2020 Arda Çebi. All rights reserved.
+// Use of this source code is governed by a MIT-style license that can be
+// found in the LICENSE file.
 
 #include <iostream>
 #include <chrono>
