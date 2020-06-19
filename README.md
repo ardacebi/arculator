@@ -1,2 +1,2 @@
-# calculator
-Advanced terminal calculator and converter.
+# ARCULATOR
+The advanced terminal calculator and converter.
