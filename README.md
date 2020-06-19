@@ -31,7 +31,7 @@ Arculator also offers a conversion mode (inpired by Windows' built-in calculator
 ## Roadmap
 - [ ] Complete all unit conversions.
 - [ ] Add standard calculating ability.
-- [ ] Submit to package managers such as Homebrew for easier usage.
+- [ ] Submit to package managers such as Homebrew for easier usage and convert to a proper command line tool.
 
 ## Contributing
 Arculator is totally open for contributions from everyone. Make sure to check out the [Code of Conduct](https://github.com/ardacebi/arculator/blob/master/CODE_OF_CONDUCT.md) and the [Contributing Guidelines](https://github.com/ardacebi/arculator/blob/master/CONTRIBUTING.md) before your contributions.
