@@ -65,33 +65,34 @@ int main()
     int sourceangle;
     int targetangle;
 
-    std::cout << R"(
+    printf(R"EOF(
     ___    ____  ________  ____    ___  __________  ____ 
    /   |  / __ \/ ____/ / / / /   /   |/_  __/ __ \/ __ \
   / /| | / /_/ / /   / / / / /   / /| | / / / / / / /_/ /
  / ___ |/ _, _/ /___/ /_/ / /___/ ___ |/ / / /_/ / _, _/ 
 /_/  |_/_/ |_|\____/\____/_____/_/  |_/_/  \____/_/ |_|  
                                                          
-)" << '\n';
+)EOF");
 
-    std::cout << "Welcome to ARCULATOR - The Advanced Terminal Calculator and Converter.";
+    std::cout << "Welcome to ARCULATOR - The Advanced Terminal Calculator and Converter\n";
+    std::cout << "Made by Arda Çebi (@ardacebi)\n\n";
 
-    sleep_for(milliseconds(1000));
-    sleep_until(system_clock::now() + seconds(1));
+    sleep_for(milliseconds(500));
+    sleep_until(system_clock::now() + milliseconds(500));
 
-    std::cout << "What kind of conversion would you like to do? (insert it's number e.g. 1)";
-    std::cout << "\n1. Currency\n\n";
-    std::cout << "\n2. Volume\n\n";
-    std::cout << "\n3. Length\n\n";
-    std::cout << "\n4. Weight and Mass\n\n";
-    std::cout << "\n5. Temperature\n\n";
-    std::cout << "\n6. Energy\n\n";
-    std::cout << "\n7. Area\n\n";
-    std::cout << "\n8. Speed\n\n";
-    std::cout << "\n9. Time\n\n";
-    std::cout << "\n10. Power\n\n";
-    std::cout << "\n11. Data\n\n";
-    std::cout << "\n12. Pressure\n\n";
+    std::cout << "What kind of conversion would you like to do? (insert it's number e.g. 1)\n";
+    std::cout << "\n1. Currency";
+    std::cout << "\n2. Volume";
+    std::cout << "\n3. Length";
+    std::cout << "\n4. Weight and Mass";
+    std::cout << "\n5. Temperature";
+    std::cout << "\n6. Energy";
+    std::cout << "\n7. Area";
+    std::cout << "\n8. Speed";
+    std::cout << "\n9. Time";
+    std::cout << "\n10. Power";
+    std::cout << "\n11. Data";
+    std::cout << "\n12. Pressure";
     std::cout << "\n13. Angle\n\n";
 
     std::cin >> calcselection;
@@ -99,14 +100,14 @@ int main()
     if (calcselection == 1)
     {
 
-        std::string currencyselectedoption = std::string("The selected option is: ") + std::string("Currency");
+        std::string currencyselectedoption = std::string("\nThe selected option is: ") + std::string("Currency\n\n");
         std::cout << currencyselectedoption;
-        
-        std::cout << "Input your source currency (ISO 4217 format, e.g. USD)";
 
+        std::cout << "Input your \033[1;31msource\033[0m currency (ISO 4217 format, e.g. USD)\n";
         std::cin >> sourcecurrency;
 
-        std::cout << "Input your \e[1mBold\e[0m non-bold currency (ISO 4217 format, e.g. USD)";
+        std::cout << "Input your \033[1;31mtarget\033[0m currency (ISO 4217 format, e.g. USD)\n";
+        std::cin >> targetcurrency;
     }
 
     return 0;
