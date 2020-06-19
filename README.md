@@ -20,6 +20,14 @@ g++ -std=c++11 arculator.cpp -o arculator.out
 ./arculator.out
 ```
 
+## Features
+### Regular Calculation
+Arculator (as being a calculator) features a classic calculator mode for your regular calculations that you can use with `+`, `-`, `/`, `*` and others.
+
+### Conversion
+Arculator also offers a conversion mode (inpired by Windows' built-in calculator) which has options like Volume, Length, Temperature, Currency (requires connectivity) and others. 
+
+
 ## Roadmap
 - [ ] Complete all unit conversions.
 - [ ] Add standard calculating ability.
