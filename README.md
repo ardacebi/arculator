@@ -24,3 +24,6 @@ g++ -std=c++11 arculator.cpp -o arculator.out
 - [ ] Complete all unit conversions.
 - [ ] Add standard calculating ability.
 - [ ] Submit to package managers such as Homebrew for easier usage.
+
+## Contributing
+Arculator is totally open for contributions from everyone. Make sure to check out the [Code of Conduct](https://github.com/ardacebi/arculator/blob/master/CODE_OF_CONDUCT.md) and the [Contributing Guidelines](https://github.com/ardacebi/arculator/blob/master/CONTRIBUTING.md) before your contributions.
