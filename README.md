@@ -2,15 +2,15 @@
 The advanced terminal calculator and converter.
 
 ## Building
-Because of used features, Arculator **needs** to be builded with C++11. Other versions will probably not work.
+
+Just run the included script inside the build folder
 
 '''
-g++ -std=c++11 arculator.cpp -o arculator.out
+cd build
+./build.sh
+./arculator
 '''
 
-'''
-./arculator.out
-'''
 
 ## Roadmap
 - [ ] Complete all unit conversions.
