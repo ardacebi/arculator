@@ -30,9 +30,6 @@ int main()
     // USER CONFIG
     int skipmenu;
 
-    // MASTER CONVERSION TYPE
-    int calcselection;
-
     // CURRENCY
     int valuesourcecurrency;
     int targetcurrency;
@@ -104,14 +101,14 @@ int main()
     {
         cout << "Arculator Menu (insert it's number e.g. 1)\n";
         cout << "\n1. Start";
-        cout << "\n2. Settings\n\n";
+        cout << "\n2. Settings";
+        cout << "\n3. Exit\n\n";
 
         int initmenuselection;
-
         cin >> initmenuselection;
-
         if (initmenuselection == 1)
         {
+            int calcselection;
             do
             {
                 cout << "What kind of conversion would you like to do? (insert it's number e.g. 1)\n";
@@ -157,10 +154,9 @@ int main()
             do
             {
                 cout << "\nSettings\n\n";
-
-                cout << "1. Menu Options\n";
-                cout << "2. Delay Options\n";
-                cout << "3. Currency Data\n";
+                cout << "1. Menu options\n";
+                cout << "2. Delay options\n";
+                cout << "3. Currency provider\n";
                 cout << "4. Go back\n\n";
 
                 int settingsselection;
@@ -194,6 +190,14 @@ int main()
                     break;
                 }
             } while (true);
+        }
+        else if (initmenuselection == 3)
+        {
+            break;
+        }
+        else
+        {
+            cout << "\n \033[1;31mWARN:\033[0m Invalid input, try again.\n\n";
         }
     } while (true);
 
