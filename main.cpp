@@ -34,7 +34,7 @@ int main()
     int calcselection;
 
     // CURRENCY
-    int sourcecurrency;
+    int valuesourcecurrency;
     int targetcurrency;
 
     // VOLUME
@@ -100,86 +100,102 @@ int main()
     sleep_for(milliseconds(500));
     sleep_until(system_clock::now() + milliseconds(500));
 
-    cout << "Arculator Menu (insert it's number e.g. 1)\n";
-    cout << "\n1. Start";
-    cout << "\n2. Settings\n\n";
-
-    int initmenuselection;
-
-    cin >> initmenuselection;
-
-    if (initmenuselection == 1)
+    do
     {
+        cout << "Arculator Menu (insert it's number e.g. 1)\n";
+        cout << "\n1. Start";
+        cout << "\n2. Settings\n\n";
 
-        cout << "What kind of conversion would you like to do? (insert it's number e.g. 1)\n";
-        cout << "\n1. Currency";
-        cout << "\n2. Volume";
-        cout << "\n3. Length";
-        cout << "\n4. Weight and Mass";
-        cout << "\n5. Temperature";
-        cout << "\n6. Energy";
-        cout << "\n7. Area";
-        cout << "\n8. Speed";
-        cout << "\n9. Time";
-        cout << "\n10. Power";
-        cout << "\n11. Data";
-        cout << "\n12. Pressure";
-        cout << "\n13. Angle\n\n";
+        int initmenuselection;
 
-        cin >> calcselection;
+        cin >> initmenuselection;
 
-        if (calcselection == 1)
+        if (initmenuselection == 1)
         {
-            string currencyselectedoption = string("\nThe selected option is: ") + string("Currency\n\n");
-            cout << currencyselectedoption;
-
-            sleep_for(milliseconds(500));
-            sleep_until(system_clock::now() + milliseconds(500));
-
-            cout << "Input your \033[1;31msource\033[0m value and currency (ISO 4217 format, e.g. 10 USD)\n";
-            cin >> sourcecurrency;
-
-            cout << "Input your \033[1;31mtarget\033[0m value and currency (ISO 4217 format, e.g. 10 EUR)\n";
-            cin >> targetcurrency;
-        }
-
-        if (calcselection == 2)
-        {
-            string volumeselectedoption = string("\nThe selected option is: ") + string("Volume\n\n");
-            cout << volumeselectedoption;
-
-            sleep_for(milliseconds(500));
-            sleep_until(system_clock::now() + milliseconds(500));
-
-            cout << "Input your \033[1;31msource\033[0m value and currency (ISO 4217 format, e.g. 10 USD)\n";
-            cin >> sourcecurrency;
-
-            cout << "Input your \033[1;31mtarget\033[0m value and currency (ISO 4217 format, e.g. 10 EUR)\n";
-            cin >> targetcurrency;
-        }
-    }
-    else if (initmenuselection == 2)
-    {
-        cout << "\nSettings\n\n";
-
-        cout << "1. Menu Options\n";
-        cout << "2. Delay Options\n";
-        cout << "3. Currency Data\n\n";
-
-        int settingsselection;
-        cin >> settingsselection;
-
-        if (settingsselection = 1)
-        {
-            cout << '1. Enable "Skip menu by default"? (1/0)\n';
-            cin >> skipmenu;
-
-            if (skipmenu == 1)
+            do
             {
-                cout << '"Skip menu by default" has been enabled.\n';
-            }
+                cout << "What kind of conversion would you like to do? (insert it's number e.g. 1)\n";
+                cout << "\n1. Currency";
+                cout << "\n2. Volume";
+                cout << "\n3. Length";
+                cout << "\n4. Weight and Mass";
+                cout << "\n5. Temperature";
+                cout << "\n6. Energy";
+                cout << "\n7. Area";
+                cout << "\n8. Speed";
+                cout << "\n9. Time";
+                cout << "\n10. Power";
+                cout << "\n11. Data";
+                cout << "\n12. Pressure";
+                cout << "\n13. Angle";
+                cout << "\n14. Go back\n\n";
+
+                cin >> calcselection;
+
+                if (calcselection == 1)
+                {
+                    string currencyselectedoption = string("\nThe selected option is: ") + string("Currency\n\n");
+                    cout << currencyselectedoption;
+
+                    sleep_for(milliseconds(500));
+                    sleep_until(system_clock::now() + milliseconds(500));
+
+                    cout << "Input your \033[1;31msource\033[0m value and currency (ISO 4217 format, e.g. 10 USD)\n";
+                    cin >> valuesourcecurrency;
+
+                    cout << "Input your \033[1;31mtarget\033[0m currency (ISO 4217 format, e.g. EUR)\n";
+                    cin >> targetcurrency;
+                }
+                else if (calcselection == 14)
+                {
+                    break;
+                }
+            } while (true);
         }
-    }
+        else if (initmenuselection == 2)
+        {
+            do
+            {
+                cout << "\nSettings\n\n";
+
+                cout << "1. Menu Options\n";
+                cout << "2. Delay Options\n";
+                cout << "3. Currency Data\n";
+                cout << "4. Go back\n\n";
+
+                int settingsselection;
+                cin >> settingsselection;
+
+                if (settingsselection == 1)
+                {
+                    do
+                    {
+                        cout << "\n1. Enable 'Skip menu on launch'? (1/0)\n";
+                        cin >> skipmenu;
+
+                        if (skipmenu == 1)
+                        {
+                            cout << "\n'Skip menu on launch' has been enabled.\n";
+                            break;
+                        }
+                        else if (skipmenu == 0)
+                        {
+                            cout << "\n'Skip menu on launch' has been disabled.\n";
+                            break;
+                        }
+                        else
+                        {
+                            cout << "\nYour input is not valid.\n";
+                        }
+                    } while (true);
+                }
+                else if (settingsselection == 4)
+                {
+                    break;
+                }
+            } while (true);
+        }
+    } while (true);
 
     return 0;
 }
