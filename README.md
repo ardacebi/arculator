@@ -4,13 +4,13 @@ The advanced terminal calculator and converter.
 ![](https://user-images.githubusercontent.com/17576065/85184071-0a401880-b297-11ea-839d-84c9433d4399.png)
 
 ## Building
-Just run the included script inside the build folder
+Just run the included script inside the build folder.
 
-'''
+```
 cd build
 ./build.sh
 ./arculator
-'''
+```
 
 ## Features
 ### Regular Calculation
