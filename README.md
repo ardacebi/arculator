@@ -1,7 +1,7 @@
 # Arculator
 The advanced terminal calculator and converter.
 
-![](https://user-images.githubusercontent.com/17576065/85184071-0a401880-b297-11ea-839d-84c9433d4399.png)
+![](https://user-images.githubusercontent.com/17576065/85226949-cc500b00-b3e2-11ea-8610-4594ed70d46e.png)
 
 ## Building
 ### Cmake (recommended)
