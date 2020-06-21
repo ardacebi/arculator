@@ -4,12 +4,19 @@ The advanced terminal calculator and converter.
 ![](https://user-images.githubusercontent.com/17576065/85184071-0a401880-b297-11ea-839d-84c9433d4399.png)
 
 ## Building
-Just run the included script inside the build folder.
+Arculator is ready to be built using Cmake. Just follow the commands below.
 
 ```
 cd build
-./build.sh
+cmake ..
+make
 ./arculator
+```
+
+> If you want faster builds, you can use the multi-core flag on the make (third) step:
+
+```
+make -j7
 ```
 
 ## Features
