@@ -4,7 +4,7 @@ The advanced terminal calculator and converter.
 ![](https://user-images.githubusercontent.com/17576065/85184071-0a401880-b297-11ea-839d-84c9433d4399.png)
 
 ## Building
-Arculator is ready to be built using Cmake. Just follow the commands below.
+### Cmake (recommended)
 
 ```
 cd build
@@ -17,6 +17,20 @@ make
 
 ```
 make -j7
+```
+
+### G++
+There's a build script for g++ building inside the build folder.
+```
+cd build
+./build.sh
+./arculator
+```
+
+> If you encounter permission issues, just run the chmod command to make the build script executable (already made by me but in case):
+
+```
+chmod 755 build.sh
 ```
 
 ## Features
