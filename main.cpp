@@ -27,7 +27,10 @@ int main() {
   using namespace std::chrono;
 
   // USER CONFIG
-  int skipmenu;
+  bool skipmenu;
+
+  // SETTING INPUTS (ignore)
+  char *skipmenuinput;
 
   // CURRENCY
   int valuesourcecurrency;
@@ -109,7 +112,9 @@ int main() {
     if (initmenuselection == 1) {
       int calcselection;
       do {
-        cout << "\nWhat kind of conversion would you like to do? (insert it's number e.g. 1)\n" << endl;
+        cout << "\nWhat kind of conversion would you like to do? (insert it's "
+                "number e.g. 1)\n"
+             << endl;
         cout << "1. Currency" << endl;
         cout << "2. Volume" << endl;
         cout << "3. Length" << endl;
@@ -161,14 +166,16 @@ int main() {
 
         if (settingsselection == 1) {
           do {
-            cout << "\n1. Enable 'Skip menu on launch'? (1/0)" << endl;
-            cin >> skipmenu;
+            cout << "\n1. Enable 'Skip menu on launch'? (y/N)" << endl;
+            cin >> skipmenuinput;
 
-            if (skipmenu == 1) {
-              cout << "\n'Skip menu on launch' has been enabled." << endl;
+            if (skipmenuinput == "y" || "Y") {
+              bool skipmenu = true;
+              cout << "\n\e[1m'Skip menu on launch' has been enabled.\e[0m" << endl;
               break;
-            } else if (skipmenu == 0) {
-              cout << "\n'Skip menu on launch' has been disabled." << endl;
+            } else if (skipmenuinput == "N" || "n") {
+              bool skipmenu = false;
+              cout << "\n\e[1m'Skip menu on launch' has been disabled.\e[0m" << endl;
               break;
             } else {
               cout << "\n \033[1;31mWARN:\033[0m Invalid input, try again."
