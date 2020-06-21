@@ -102,6 +102,8 @@ int main() {
   int sourceangle;
   int targetangle;
 
+  cout << string(50, '\n');
+
   printf(R"EOF(
     ___    ____  ________  ____    ___  __________  ____ 
    /   |  / __ \/ ____/ / / / /   /   |/_  __/ __ \/ __ \
