@@ -92,7 +92,7 @@ int main()
 )EOF");
 
     cout << "Welcome to ARCULATOR - The Advanced Terminal Calculator and Converter\n";
-    cout << "Made by @ardacebi and many others.\n\n";
+    cout << "Made by @ardacebi and many others\n\n";
 
     sleep_for(milliseconds(500));
     sleep_until(system_clock::now() + milliseconds(500));
