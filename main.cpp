@@ -9,8 +9,8 @@
 // copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 
-// The above copyright notice and this permission notice shall be included in all
-// copies or substantial portions of the Software.
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
 
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -24,19 +24,23 @@
 #include <iostream>
 #include <thread>
 
-// Include equations
-#include "equations/angle.h"
-#include "equations/area.h"
-#include "equations/data.h"
-#include "equations/energy.h"
-#include "equations/length.h"
-#include "equations/power.h"
-#include "equations/pressure.h"
-#include "equations/speed.h"
-#include "equations/temperature.h"
-#include "equations/time.h"
-#include "equations/volume.h"
-#include "equations/weight.h"
+// Include partials
+#include "partials/init.h"
+#include "partials/menu.h"
+
+// Include programs
+#include "partials/programs/angle.h"
+#include "partials/programs/area.h"
+#include "partials/programs/data.h"
+#include "partials/programs/energy.h"
+#include "partials/programs/length.h"
+#include "partials/programs/power.h"
+#include "partials/programs/pressure.h"
+#include "partials/programs/speed.h"
+#include "partials/programs/temperature.h"
+#include "partials/programs/time.h"
+#include "partials/programs/volume.h"
+#include "partials/programs/weight.h"
 
 int main() {
   using namespace std;
@@ -97,30 +101,12 @@ int main() {
   int sourceangle;
   int targetangle;
 
-  cout << string(50, '\n');
-
-  printf(R"EOF(
-    ___    ____  ________  ____    ___  __________  ____ 
-   /   |  / __ \/ ____/ / / / /   /   |/_  __/ __ \/ __ \
-  / /| | / /_/ / /   / / / / /   / /| | / / / / / / /_/ /
- / ___ |/ _, _/ /___/ /_/ / /___/ ___ |/ / / /_/ / _, _/ 
-/_/  |_/_/ |_|\____/\____/_____/_/  |_/_/  \____/_/ |_|  
-                                                         
-)EOF");
-
-  cout
-      << "Welcome to ARCULATOR - The Advanced Terminal Calculator and Converter"
-      << endl;
-  cout << "Made by @ardacebi and many others\n" << endl;
-
-  sleep_for(milliseconds(500));
-  sleep_until(system_clock::now() + milliseconds(500));
+  Initiate();
 
   do {
     cout << "Arculator Menu (insert it's number e.g. 1)\n" << endl;
     cout << "1. Start" << endl;
-    cout << "2. Settings" << endl;
-    cout << "3. Exit\n" << endl;
+    cout << "2. Exit\n" << endl;
 
     int initmenuselection;
     cin >> initmenuselection;
@@ -147,47 +133,22 @@ int main() {
         cin >> calcselection;
 
         if (calcselection == 1) {
-          
+        } else if (calcselection == 2) {
+        } else if (calcselection == 3) {
+        } else if (calcselection == 4) {
+        } else if (calcselection == 5) {
+        } else if (calcselection == 6) {
+        } else if (calcselection == 7) {
+        } else if (calcselection == 8) {
+        } else if (calcselection == 9) {
+        } else if (calcselection == 10) {
+        } else if (calcselection == 11) {
+        } else if (calcselection == 12) {
         } else if (calcselection == 13) {
           break;
         }
       } while (true);
     } else if (initmenuselection == 2) {
-      do {
-        cout << "\nSettings\n" << endl;
-        cout << "1. Menu options" << endl;
-        cout << "2. Delay options" << endl;
-        cout << "3. Currency provider" << endl;
-        cout << "4. Go back\n" << endl;
-
-        int settingsselection;
-        cin >> settingsselection;
-
-        if (settingsselection == 1) {
-          do {
-            cout << "\n1. Enable 'Skip menu on launch'? (y/N)" << endl;
-            cin >> skipmenuinput;
-
-            if (skipmenuinput == "y" || "Y") {
-              bool skipmenu = true;
-              cout << "\n\e[1m'Skip menu on launch' has been enabled.\e[0m" << endl;
-              break;
-            } else if (skipmenuinput == "N" || "n") {
-              bool skipmenu = false;
-              cout << "\n\e[1m'Skip menu on launch' has been disabled.\e[0m" << endl;
-              break;
-            } else {
-              cout << "\n \033[1;31mWARN:\033[0m Invalid input, try again."
-                   << endl;
-            }
-          } while (true);
-        } else if (settingsselection == 4) {
-          break;
-        } else {
-          cout << "\n \033[1;31mWARN:\033[0m Invalid input, try again." << endl;
-        }
-      } while (true);
-    } else if (initmenuselection == 3) {
       break;
     } else {
       cout << "\n \033[1;31mWARN:\033[0m Invalid input, try again.\n" << endl;
