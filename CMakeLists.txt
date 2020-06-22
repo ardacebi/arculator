@@ -11,8 +11,6 @@ equations/angle.cpp
 equations/angle.h
 equations/area.cpp
 equations/area.h
-equations/currency.cpp
-equations/currency.h
 equations/data.cpp
 equations/data.h
 equations/energy.cpp

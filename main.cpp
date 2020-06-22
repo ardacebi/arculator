@@ -27,7 +27,6 @@
 // Include equations
 #include "equations/angle.h"
 #include "equations/area.h"
-#include "equations/currency.h"
 #include "equations/data.h"
 #include "equations/energy.h"
 #include "equations/length.h"
@@ -49,10 +48,6 @@ int main() {
 
   // SETTING INPUTS (ignore)
   char *skipmenuinput;
-
-  // CURRENCY
-  string valuesourcecurrency;
-  string targetcurrency;
 
   // VOLUME
   int sourcevolume;
@@ -135,41 +130,25 @@ int main() {
         cout << "\nWhat kind of conversion would you like to do? (insert it's "
                 "number e.g. 1)\n"
              << endl;
-        cout << "1. Currency" << endl;
-        cout << "2. Volume" << endl;
-        cout << "3. Length" << endl;
-        cout << "4. Weight and Mass" << endl;
-        cout << "5. Temperature" << endl;
-        cout << "6. Energy" << endl;
-        cout << "7. Area" << endl;
-        cout << "8. Speed" << endl;
-        cout << "9. Time" << endl;
-        cout << "10. Power" << endl;
-        cout << "11. Data" << endl;
-        cout << "12. Pressure" << endl;
-        cout << "13. Angle" << endl;
-        cout << "14. Go back\n" << endl;
+        cout << "1. Volume" << endl;
+        cout << "2. Length" << endl;
+        cout << "3. Weight and Mass" << endl;
+        cout << "4. Temperature" << endl;
+        cout << "5. Energy" << endl;
+        cout << "6. Area" << endl;
+        cout << "7. Speed" << endl;
+        cout << "8. Time" << endl;
+        cout << "9. Power" << endl;
+        cout << "10. Data" << endl;
+        cout << "11. Pressure" << endl;
+        cout << "12 Angle" << endl;
+        cout << "13. Go back\n" << endl;
 
         cin >> calcselection;
 
         if (calcselection == 1) {
-          string currencyselectedoption =
-              string("\nThe selected option is: ") + string("Currency\n");
-          cout << currencyselectedoption << endl;
-
-          sleep_for(milliseconds(500));
-          sleep_until(system_clock::now() + milliseconds(500));
-
-          cout << "Input your \033[1;31msource\033[0m value and currency (ISO "
-                  "4217 format, e.g. 10 USD)"
-               << endl;
-          cin >> valuesourcecurrency;
-
-          cout << "Input your \033[1;31mtarget\033[0m currency (ISO 4217 "
-                  "format, e.g. EUR)"
-               << endl;
-          cin >> targetcurrency;
-        } else if (calcselection == 14) {
+          
+        } else if (calcselection == 13) {
           break;
         }
       } while (true);
