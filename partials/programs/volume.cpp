@@ -30,9 +30,9 @@ void VolumeConversion() {
   using namespace std::this_thread;
   using namespace std::chrono;
 
-  string currencyselectedoption =
+  string selectedoption =
       string("\nThe selected option is: ") + string("Volume\n");
-  cout << currencyselectedoption << endl;
+  cout << selectedoption << endl;
 
   sleep_for(milliseconds(500));
   sleep_until(system_clock::now() + milliseconds(500));

@@ -133,17 +133,29 @@ int main() {
         cin >> calcselection;
 
         if (calcselection == 1) {
+          VolumeConversion();
         } else if (calcselection == 2) {
+          LengthConversion();
         } else if (calcselection == 3) {
+          WeightConversion();
         } else if (calcselection == 4) {
+          TemperatureConversion();
         } else if (calcselection == 5) {
+          EnergyConversion();
         } else if (calcselection == 6) {
+          AreaConversion();
         } else if (calcselection == 7) {
+          SpeedConversion();
         } else if (calcselection == 8) {
+          TimeConversion();
         } else if (calcselection == 9) {
+          PowerConversion();
         } else if (calcselection == 10) {
+          DataConversion();
         } else if (calcselection == 11) {
+          PressureConversion();
         } else if (calcselection == 12) {
+          AngleConversion();
         } else if (calcselection == 13) {
           break;
         }
