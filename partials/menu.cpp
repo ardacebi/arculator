@@ -71,7 +71,7 @@ void Menu() {
         cout << "9. Power" << endl;
         cout << "10. Data" << endl;
         cout << "11. Pressure" << endl;
-        cout << "12 Angle" << endl;
+        cout << "12. Angle" << endl;
         cout << "13. Go back\n" << endl;
 
         cin >> calcselection;
