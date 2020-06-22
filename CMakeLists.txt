@@ -7,8 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 project(arculator VERSION 1.0)
 
 add_executable(arculator
-partials/init.cpp
-partials/init.h
+partials/intro.cpp
+partials/intro.h
 partials/menu.cpp
 partials/menu.h
 partials/programs/angle.cpp

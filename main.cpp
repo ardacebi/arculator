@@ -101,7 +101,7 @@ int main() {
   int sourceangle;
   int targetangle;
 
-  Initiate();
+  Intro();
 
   do {
     cout << "Arculator Menu (insert it's number e.g. 1)\n" << endl;

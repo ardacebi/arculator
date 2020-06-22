@@ -23,9 +23,9 @@
 #include <chrono>
 #include <iostream>
 #include <thread>
-#include "init.h"
+#include "intro.h"
 
-void Initiate() {
+void Intro() {
   using namespace std;
   using namespace std::this_thread;
   using namespace std::chrono;
