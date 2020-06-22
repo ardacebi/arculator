@@ -16,7 +16,7 @@ make
 > If you want faster builds, you can use the multi-core flag on the make (third) step:
 
 ```
-make -j7
+make -j200
 ```
 
 ### G++
