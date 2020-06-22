@@ -33,6 +33,16 @@ void VolumeConversion() {
   int sourcevolume;
   int targetvolume;
 
+  printf(R"EOF(
+   +------+ 
+  /      /|
+ +------+ |
+ |      | +
+ |      |/
+ +------+ 
+)EOF");
+
+
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mVolume\e[0m\n");
   cout << selectedoption << endl;

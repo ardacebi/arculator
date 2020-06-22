@@ -33,6 +33,20 @@ void TemperatureConversion() {
   int sourcetemperature;
   int targettemperature;
 
+  printf(R"EOF(
+     | |
+     | |
+     | |
+     | |
+     | |
+     | |
+     |_|
+     |*|
+    '***`
+   (*****)
+    `---'
+)EOF");
+
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mTemperature\e[0m\n");
   cout << selectedoption << endl;

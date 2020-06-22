@@ -33,6 +33,22 @@ void WeightConversion() {
   int sourceweight;
   int targetweight;
 
+  printf(R"EOF(
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+      *@@@@@@@@@@@@@@@@@@@@@@@@@@@.     
+                 @@   @@                
+             @@@@       @@@@            
+         .@        @@@        @         
+        @      @.       /@      @       
+      %@     @@       @@  @@     @      
+      @      @     @ @     @      @     
+     @        @           @        @    
+    @          @@       @@          @   
+   @  @                              @  
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   
+       @@@@@@@@@@@@@@@@@@@@@@@@@@&
+)EOF");
+
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mWeight\e[0m\n");
   cout << selectedoption << endl;

@@ -33,6 +33,17 @@ void PowerConversion() {
   int sourcepower;
   int targetpower;
 
+  printf(R"EOF(
+           _/  /
+        /  _/
+      _/  /
+     / __/
+   _/ /
+  /__/
+ //
+/'                              
+)EOF");
+
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mPower\e[0m\n");
   cout << selectedoption << endl;

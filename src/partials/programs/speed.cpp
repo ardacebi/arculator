@@ -33,6 +33,18 @@ void SpeedConversion() {
   int sourcespeed;
   int targetspeed;
 
+  printf(R"EOF(
+               *//////////              
+          ///            //  //         
+       //                      //       
+     /                           //     
+    /                           (( /*   
+   /                       #(           
+                   *( (((         ////  
+                 (((((                  
+                                        
+)EOF");
+
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mSpeed\e[0m\n");
   cout << selectedoption << endl;

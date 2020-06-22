@@ -33,6 +33,18 @@ void TimeConversion() {
   int sourcetime;
   int targettime;
 
+  printf(R"EOF(
+  _______
+ /       \
+|    |    |
+|    |    |
+|     \   |
+|         |
+ \_______/
+)EOF");
+
+
+
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mTime\e[0m\n");
   cout << selectedoption << endl;

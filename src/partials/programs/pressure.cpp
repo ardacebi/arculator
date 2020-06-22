@@ -33,6 +33,18 @@ void PressureConversion() {
   int sourcepressure;
   int targetpressure;
 
+  printf(R"EOF(
+               *//////////              
+          ///            //  //         
+       //                      //       
+     /                           //     
+    /                           (( /*   
+   /                       #(           
+                   *( (((         ////  
+                 (((((                  
+                                        
+)EOF");
+
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mPressure\e[0m\n");
   cout << selectedoption << endl;
