@@ -31,7 +31,7 @@ void PowerConversion() {
   using namespace std::chrono;
 
   string selectedoption =
-      string("\nThe selected option is: ") + string("Power\n");
+      string("\nThe selected option is: ") + string("\e[1mPower\e[0m\n");
   cout << selectedoption << endl;
 
   sleep_for(milliseconds(500));

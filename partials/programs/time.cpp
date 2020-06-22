@@ -31,7 +31,7 @@ void TimeConversion() {
   using namespace std::chrono;
 
   string selectedoption =
-      string("\nThe selected option is: ") + string("Time\n");
+      string("\nThe selected option is: ") + string("\e[1mTime\e[0m\n");
   cout << selectedoption << endl;
 
   sleep_for(milliseconds(500));

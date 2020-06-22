@@ -31,7 +31,7 @@ void WeightConversion() {
   using namespace std::chrono;
 
   string selectedoption =
-      string("\nThe selected option is: ") + string("Weight\n");
+      string("\nThe selected option is: ") + string("\e[1mWeight\e[0m\n");
   cout << selectedoption << endl;
 
   sleep_for(milliseconds(500));

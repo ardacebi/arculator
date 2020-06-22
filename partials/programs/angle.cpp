@@ -31,7 +31,7 @@ void AngleConversion() {
   using namespace std::chrono;
 
   string selectedoption =
-      string("\nThe selected option is: ") + string("Angle\n");
+      string("\nThe selected option is: ") + string("\e[1mAngle\e[0m\n");
   cout << selectedoption << endl;
 
   sleep_for(milliseconds(500));

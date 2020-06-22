@@ -31,7 +31,7 @@ void SpeedConversion() {
   using namespace std::chrono;
 
   string selectedoption =
-      string("\nThe selected option is: ") + string("Speed\n");
+      string("\nThe selected option is: ") + string("\e[1mSpeed\e[0m\n");
   cout << selectedoption << endl;
 
   sleep_for(milliseconds(500));

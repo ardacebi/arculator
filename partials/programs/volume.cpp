@@ -31,7 +31,7 @@ void VolumeConversion() {
   using namespace std::chrono;
 
   string selectedoption =
-      string("\nThe selected option is: ") + string("Volume\n");
+      string("\nThe selected option is: ") + string("\e[1mVolume\e[0m\n");
   cout << selectedoption << endl;
 
   sleep_for(milliseconds(500));
