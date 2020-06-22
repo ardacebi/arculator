@@ -11,6 +11,8 @@ partials/intro.cpp
 partials/intro.h
 partials/menu.cpp
 partials/menu.h
+partials/invalidinput.cpp
+partials/invalidinput.h
 partials/programs/angle.cpp
 partials/programs/angle.h
 partials/programs/area.cpp
