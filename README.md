@@ -45,3 +45,6 @@ Arculator offers a conversion mode (inpired by Windows' built-in calculator) whi
 
 ## Contributing
 Arculator is totally open for contributions from everyone. Make sure to check out the [Code of Conduct](https://github.com/ardacebi/arculator/blob/master/CODE_OF_CONDUCT.md) and the [Contributing Guidelines](https://github.com/ardacebi/arculator/blob/master/CONTRIBUTING.md) before your contributions.
+
+## License
+This projects is licensed under the [MIT License](https://github.com/ardacebi/arculator/blob/master/LICENSE).
