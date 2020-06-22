@@ -20,15 +20,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#include "temperature.h"
 #include <chrono>
 #include <iostream>
 #include <thread>
-#include "temperature.h"
 
 void TemperatureConversion() {
   using namespace std;
   using namespace std::this_thread;
   using namespace std::chrono;
+
+  int sourcetemperature;
+  int targettemperature;
 
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mTemperature\e[0m\n");

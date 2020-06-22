@@ -28,72 +28,10 @@
 #include "partials/intro.h"
 #include "partials/menu.h"
 
-// Include programs
-#include "partials/programs/angle.h"
-#include "partials/programs/area.h"
-#include "partials/programs/data.h"
-#include "partials/programs/energy.h"
-#include "partials/programs/length.h"
-#include "partials/programs/power.h"
-#include "partials/programs/pressure.h"
-#include "partials/programs/speed.h"
-#include "partials/programs/temperature.h"
-#include "partials/programs/time.h"
-#include "partials/programs/volume.h"
-#include "partials/programs/weight.h"
-
 int main() {
   using namespace std;
   using namespace std::this_thread;
   using namespace std::chrono;
-
-  // VOLUME
-  int sourcevolume;
-  int targetvolume;
-
-  // LENGTH
-  int sourcelength;
-  int targetlength;
-
-  // WEIGHT AND MASS
-  int sourceweight;
-  int targetweight;
-
-  // TEMPERATURE
-  int sourcetemperature;
-  int targettemperature;
-
-  // ENERGY
-  int sourceenergy;
-  int targetenergy;
-
-  // AREA
-  int sourcearea;
-  int targetarea;
-
-  // SPEED
-  int sourcespeed;
-  int targetspeed;
-
-  // TIME
-  int sourcetime;
-  int targettime;
-
-  // POWER
-  int sourcepower;
-  int targetpower;
-
-  // DATA
-  int sourcedata;
-  int targetdata;
-
-  // PRESSURE
-  int sourcepressure;
-  int targetpressure;
-
-  // ANGLE
-  int sourceangle;
-  int targetangle;
 
   Intro();
   Menu();

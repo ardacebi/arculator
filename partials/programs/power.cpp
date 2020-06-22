@@ -20,15 +20,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#include "power.h"
 #include <chrono>
 #include <iostream>
 #include <thread>
-#include "power.h"
 
 void PowerConversion() {
   using namespace std;
   using namespace std::this_thread;
   using namespace std::chrono;
+
+  int sourcepower;
+  int targetpower;
 
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mPower\e[0m\n");

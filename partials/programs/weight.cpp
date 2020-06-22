@@ -20,15 +20,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#include "weight.h"
 #include <chrono>
 #include <iostream>
 #include <thread>
-#include "weight.h"
 
 void WeightConversion() {
   using namespace std;
   using namespace std::this_thread;
   using namespace std::chrono;
+
+  int sourceweight;
+  int targetweight;
 
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mWeight\e[0m\n");

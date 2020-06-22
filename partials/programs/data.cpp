@@ -20,15 +20,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#include "data.h"
 #include <chrono>
 #include <iostream>
 #include <thread>
-#include "data.h"
 
 void DataConversion() {
   using namespace std;
   using namespace std::this_thread;
   using namespace std::chrono;
+
+  int sourcedata;
+  int targetdata;
 
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mData\e[0m\n");

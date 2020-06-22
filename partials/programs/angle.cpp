@@ -20,15 +20,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#include "angle.h"
 #include <chrono>
 #include <iostream>
 #include <thread>
-#include "angle.h"
 
 void AngleConversion() {
   using namespace std;
   using namespace std::this_thread;
   using namespace std::chrono;
+
+  int sourceangle;
+  int targetangle;
 
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mAngle\e[0m\n");

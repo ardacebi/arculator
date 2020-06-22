@@ -20,15 +20,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#include "speed.h"
 #include <chrono>
 #include <iostream>
 #include <thread>
-#include "speed.h"
 
 void SpeedConversion() {
   using namespace std;
   using namespace std::this_thread;
   using namespace std::chrono;
+
+  int sourcespeed;
+  int targetspeed;
 
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mSpeed\e[0m\n");

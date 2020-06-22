@@ -20,15 +20,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#include "pressure.h"
 #include <chrono>
 #include <iostream>
 #include <thread>
-#include "pressure.h"
 
 void PressureConversion() {
   using namespace std;
   using namespace std::this_thread;
   using namespace std::chrono;
+
+  int sourcepressure;
+  int targetpressure;
 
   string selectedoption =
       string("\nThe selected option is: ") + string("\e[1mPressure\e[0m\n");
