@@ -44,7 +44,7 @@ void Intro() {
   cout
       << "Welcome to ARCULATOR - The Advanced Terminal Calculator and Converter"
       << endl;
-  cout << "Made by @ardacebi and many others\n" << endl;
+  cout << "Made by Arda Çebi (@ardacebi)\n" << endl;
 
   sleep_for(milliseconds(500));
   sleep_until(system_clock::now() + milliseconds(500));
