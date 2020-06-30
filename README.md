@@ -13,10 +13,10 @@ make
 ./arculator
 ```
 
-> If you want faster builds, you can use the multi-core flag on the make (third) step:
+> If you want faster builds, use the -jthreadcount flag on the "make" (third) step: 
 
 ```
-make -j200
+make -j2000
 ```
 
 ### G++
